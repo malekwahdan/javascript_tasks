@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://kit.fontawesome.com/6bdf27a663.js" crossorigin="anonymous"></script>
+
+  <style>
+   body{
+    background-color: #4caf9e;
+   }
+
+    button {
+        background-color: #da92d4; 
+        border: none; 
+        color: white; 
+        padding: 15px 32px; 
+        text-align: center; 
+        text-decoration: none; 
+        display: inline-block; 
+        font-size: 16px;
+        margin: 4px 2px; 
+        cursor: pointer; 
+        border-radius: 5px; 
+        transition: background-color 0.3s ease, transform 0.3s ease; 
+    }
+
+    button:hover {
+        background-color: #a04580; 
+        transform: scale(1.05); 
+    }
+
+    button:active {
+        transform: scale(0.95); 
+    }
+    select{
+      background-color: aquamarine;
+      height: 3rem;
+      color: rgb(221, 87, 194);
+      border: none;
+    }
+    input{
+      background-color: rgb(255, 205, 208);
+      height: 3rem;
+      width: 6rem;
+    }
+    h1{
+      text-align: center;
+      color: rgb(255, 205, 208);
+    }
+</style>
+</head>
+<body>
+  <h1>DOM TASK</h1>
+   <button onclick="bold()">bold</button>
+   <button onclick="italic()">Italic</button>
+   <button onclick="left()"><i class="fa-solid fa-list"></i></button>
+   <button onclick="mid()"><i class="fa-solid fa-list"></i></button>
+   <button onclick="right()"><i class="fa-solid fa-list"></i></button>
+   <button onclick="upp()">upper case</button>
+   <button onclick="low()">lower case</button>
+   <button onclick="cap()">capitalize</button>
+   <button onclick="cc()">clear text</button>
+   <input id="colors" type="color">
+   <input id="divcolors" type="color">
+   <input id="size" type="number" min="15">
+   <select onchange="fonnt()" name="" id="font-picker">
+    <option value="Gill Sans, sans-serif">Stencil Std</option>
+    <option value="Times, Times New Roman, serif">Jazz LET, fantasy</option>
+   </select>
+   <button onclick="" id="print">print</button>
+   <div id="div">
+    <p id="p">Hello</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

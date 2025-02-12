@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red{
+            border-color: red;
+            
+        }
+        .popup{
+            color: red;
+        }
+        .yellow{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <!-- <form style="display: flex; flex-direction: column; justify-content: space-evenly; align-items: center; padding: 10px;" id="form" action="">
+    <input type="text" name="" id="username" placeholder="username" required>
+    <div  id="name_check"></div>
+    <input id="password1" type="password" placeholder="password1" required>
+    <div id="password1_check_check"></div>
+    <input id="p" type="password" placeholder="password2" required>
+    <div id="password2_check_check"></div>
+    <input onclick="click()" id="check" type="submit">
+    </form>
+    <input id="i" type="text"> -->
+ 
+        <label for="name">name :</label>
+        <input id="name" type="text">
+        <div class="popup" id="name_check"></div>
+        <label for="password">password :</label>
+        <input id="password" type="password">
+        <div id="password_match"></div>
+        <div class="popup" id="password_check"></div>
+        <label for="password2">password2 :</label>
+        <input id="password2" type="password">
+        <div class="popup" id="password2_check"></div>
+        
+        <button id="btn">submit</button>
+        <div style="color: green;" id="reg"></div>
+        <h1>Heading</h1>
+        <span id="count"></span>
+        <div id="colored">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates ipsa labore maiores voluptas illo reiciendis quisquam deleniti mollitia quos tempore? Quod magni tempore quidem quaerat similique asperiores quia quam quasi, pariatur hic, exercitationem quibusdam modi doloribus repellendus voluptas quo ab nemo debitis cumque ullam suscipit cum quis voluptate! Obcaecati esse voluptate ab minus fugit expedita dolorum quas doloremque deleniti pariatur atque voluptatibus suscipit fuga molestias nisi itaque, dicta voluptatem modi! Et esse, ratione earum nemo magni dolores animi exercitationem perspiciatis itaque. Necessitatibus repellat soluta, enim officia, laborum repudiandae consequuntur illum voluptatibus, eum corporis neque recusandae temporibus officiis dolore facere quaerat earum sint facilis unde. Similique nulla explicabo debitis maxime libero nemo. Vero excepturi doloremque iste quam dolorum, soluta molestiae neque deserunt voluptate deleniti fugiat. Eveniet quam odio, laudantium facere sed repellendus nemo fugiat voluptatibus voluptas autem commodi delectus! Corrupti omnis velit dolorem eveniet, illo ipsa doloribus fugiat necessitatibus eius quos? Repellendus nostrum, quae corrupti rem provident similique officiis quaerat ipsam eligendi ab maiores placeat expedita? Hic molestias ex magnam commodi a unde natus vero rerum nulla libero impedit facilis dolorum eius, iure reprehenderit corrupti dignissimos aliquid. Distinctio, quod molestiae eveniet laborum quo aliquam vero labore sequi quisquam earum provident neque, voluptatibus sapiente omnis optio voluptatum perferendis minus similique. Eaque rerum itaque et quae earum eveniet vel quod laboriosam debitis nam eius, rem maxime blanditiis impedit minus ratione labore error adipisci beatae similique. At eum magnam voluptatibus tempora, aspernatur ratione totam dolorum natus nostrum aut doloribus nesciunt ipsam sit impedit, dolore exercitationem! Hic repellendus culpa nesciunt qui cumque odio cum accusantium, cupiditate harum quisquam. Unde at fugit quos alias suscipit sit perferendis aliquid, ducimus, dicta, ratione minus! Fugiat iste tenetur, placeat quod, dolores cum incidunt nemo eius animi voluptatibus ut in eum! Placeat aperiam eligendi debitis autem iure facilis ipsam deserunt, perspiciatis dicta quod nihil, fugit corrupti reiciendis est aliquid? Itaque non quas natus reiciendis quo et! Cumque est sequi consequuntur corporis consequatur, nemo labore aut ipsa pariatur qui ducimus? Ut, corporis fugiat hic ipsa culpa aperiam corrupti reprehenderit consequatur est rerum error cum aspernatur et amet recusandae quibusdam numquam fugit quod soluta aut inventore. Adipisci, itaque nemo sunt ab minima consequatur non maiores voluptas harum placeat? Nostrum, ad laudantium architecto quidem saepe, at deleniti tenetur, quibusdam aut dignissimos expedita. Recusandae, quisquam ex. Aperiam ab quam, minus officiis porro blanditiis quas fuga molestias, a suscipit hic eligendi, dignissimos atque perferendis sed!</div>
+        <a id="link" href="https://www.google.com/">link</a>
+
+
+        <div style="background-color: rgb(209, 209, 209); height: 300px; width: 300px;">
+            <label for="item">Enter a new item: </label>
+            <input type="text" name="" id="item">
+            <button onclick="add()">add new item</button>
+            <ul id="ul">
+                
+            </ul>
+        </div>
+        <hr>
+        <div style="border: 2px solid blue; height: 500px; width: 400px; padding: 20px;">
+            <h1 style="color: blue;">Use test array</h1>
+            <label for="name">Name: </label>
+            <input id="game_name" type="text">
+            <br>
+            <br>
+            <label for="score">Score: </label>
+            <input type="text" name="" id="game_score">
+            <br>
+            <br>
+            <button onclick="addplayer()">add array</button>
+            <button onclick="displayResults()">Display Result</button>
+            <button onclick="display()">Display Scores</button>
+            <br>
+            <br>
+            <h3 style="color: blue;">Results</h1>
+            <div id="avg"></div>
+            <div id="high"></div>
+            <br>
+            <br>
+            <h3 style="color: blue;">Score</h3>
+            <div id="grid" style="display: grid; grid-template-columns: 1fr 1fr;">
+                <div style="font-weight: bold;">Name: </div>
+                <div style="font-weight: bold;">Score: </div>
+            </div>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>
